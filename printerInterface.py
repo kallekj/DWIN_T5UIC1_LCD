@@ -6,6 +6,7 @@ import json
 import requests
 from requests.exceptions import ConnectionError
 import atexit
+import jsonrpclib
 
 
 class xyze_t:
@@ -173,6 +174,9 @@ class klippySocket:
 			with self.lock:
 				self.send_line()
 
+class moonrakerSocket:
+	def __init__(self, address, port):
+		self.moonraker_server = jsonrpclib.Server('http://%s:%s/moonraker/api/' % (address, str(port)))
 
 class octoprintSocket:
 	def __init__(self, address, port, api_key):
