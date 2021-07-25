@@ -1,5 +1,8 @@
 # DWIN_T5UIC1_LCD
 
+## Version without Octoprint dependency
+This is a work in progress on my spare time, do not expect any fast progress.
+
 ## Python class for the Ender 3 V2 LCD runing klipper3d with OctoPrint / Moonraker 
 
 https://www.klipper3d.org
